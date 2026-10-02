@@ -65,8 +65,6 @@ main {
   font-weight: 500;
 }
 
-
-
 #sub-hero-1 p {
   max-width: 66ch;
 }
@@ -272,8 +270,6 @@ main {
   gap: 1rem;
   padding: clamp(0.6rem, 1.5vw, 0.9rem) clamp(1.2rem, 3vw, 2rem);
   padding-bottom: 30px;
-  /* height: 300px;
-  min-height: fit-content; */
   clip-path: polygon(
     20px 0,
     100% 0,
@@ -291,7 +287,7 @@ main {
   border-top: 4px solid rgba(3, 79, 111, 0.906);
 }
 
-#square-typo {
+.square-typo {
   color: var(--color-split-blue);
 }
 
