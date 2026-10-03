@@ -15,14 +15,6 @@ header {
   margin-top: 10px;
   padding: 5px 10px 5px 10px;
   gap: 1rem;
-  clip-path: polygon(
-    20px 0,
-    100% 0,
-    100% calc(100% - 20px),
-    calc(100% - 20px) 100%,
-    0 100%,
-    0 20px
-  );
   border-bottom: 1px solid var(--color-tag-back);
 }
 
@@ -116,3 +108,29 @@ header {
   color: hsla(237, 9%, 70%, 1);
 }
 
+@media (max-width: 768px) {
+  .navigation-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.75rem;
+    padding: 10px;
+  }
+
+  #web-tag {
+    grid-column: 1;
+    justify-self: center;
+    margin-left: 0;
+  }
+
+  .mbtn {
+    grid-column: 1;
+    justify-self: center;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nav-social {
+    display: none;
+  }
+}
