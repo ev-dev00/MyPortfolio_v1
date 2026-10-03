@@ -580,7 +580,7 @@ main {
   font-weight: 700;
 }
 
-#project-desc-wrapper {
+.project-desc-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -589,7 +589,7 @@ main {
   margin: 0 auto;
 }
 
-#project-desc-card {
+.project-desc-card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -614,7 +614,7 @@ main {
   border-radius: 2px;
 }
 
-#project-desc-card-footer {
+.project-desc-card-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -623,21 +623,21 @@ main {
   gap: 30px;
 }
 
-#project-desc-card-footer > h4 {
+.project-desc-card-footer > h4 {
   color: #d7d8db;
 }
 
-#text-proj-loc {
+.text-proj-loc {
   color: var(--color-split-blue);
   font-weight: 700;
 }
 
-#text-proj-cert {
+.text-proj-cert {
   color: var(--color-split-orange);
   font-weight: 700;
 }
 
-#project-skill-wrapper {
+.project-skill-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: start;
@@ -669,14 +669,13 @@ main {
   border: 1px solid hsla(198, 100%, 16%, 0.33);
 }
 
-#project-skil-tag-wrapper {
+.project-skil-tag-wrapper {
   display: flex;
   flex-direction: row;
-  text-decoration: none;
   gap: 0.5rem;
 }
 
-.project-skill-text-tag {
+.project-skil-tag-wrapper a {
   background-color: var(--color-tag-back);
   padding: 3px 12px 2px 12px;
   font-size: 1.1rem;
@@ -684,9 +683,10 @@ main {
   border-radius: 2px;
   color: hsl(var(--grey-h) var(--grey-s) 80%);
   transition: background-color ease 0.2s;
+  text-decoration: none;
 }
 
-.project-skill-text-tag:hover {
+.project-skil-tag-wrapper a:hover {
   background-color: var(--color-split-blue);
   padding: 3px 12px 2px 12px;
   font-size: 1.1rem;
